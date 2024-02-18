@@ -65,7 +65,10 @@ const postBurger = async (newBurger, image) => {
 
         // HUSK DENNE!! Hvis ikke hopes det opp med bildeobjekter i formData og det slutter å fungere riktig
         formData.delete("formFile");
-        alert("Burger was successfully added!")
+        
+          window.location.reload();
+          alert("Burger was successfully added!")
+        
       } catch (err) {
         console.log(err);
         return false;

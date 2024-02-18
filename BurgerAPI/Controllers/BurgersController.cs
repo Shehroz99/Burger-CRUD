@@ -38,7 +38,7 @@ public class BurgersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Burger>> Post(Burger newBurger)
+    public async Task<IActionResult> Post(Burger newBurger)
    {
          try
          {
