@@ -26,8 +26,13 @@ export const BurgerProvider = ({children}) => {
         getBurgersFromService();
     }
 
+    const deleteBurger = async (id) => {
+        const wentWell = await BurgerService.deleteBurger(id);
+        return wentWell;
+    }
+
     return (
-        <BurgerContext.Provider value={{burgers, getById, editBurger}}>
+        <BurgerContext.Provider value={{burgers, getById, editBurger, deleteBurger}}>
             {children}
         </BurgerContext.Provider>
     );

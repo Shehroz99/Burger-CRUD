@@ -5,6 +5,17 @@ const BurgerService = (() => {
   const burgerController = `${localHost}/api/Burgers`;
   const imageUploadController = `${localHost}/api/ImageUpload`;
 
+  const deleteBurger = async (id) => {
+    try {
+      const result = await axios.delete(`${burgerController}/${id}`);
+      console.log(result);
+      return result.data;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
+
   const getAll = async () => {
     try {
       const result = await axios.get(burgerController);
@@ -25,15 +36,7 @@ const BurgerService = (() => {
     }
   };
 
-  const deleteById = async (id) => {
-    try {
-      const result = await axios.delete(`${burgerController}/${id}`);
-      return result.data;
-    } catch (err) {
-      console.log(err);
-      return false;
-    }
-  };
+
 
   const putBurger = async (burgerToUpdate) => {
     try {
@@ -82,7 +85,7 @@ const postBurger = async (newBurger, image) => {
   return {
     getAll,
     getById,
-    deleteById,
+    deleteBurger,
     putBurger,
     postBurger,
     domainFromService
