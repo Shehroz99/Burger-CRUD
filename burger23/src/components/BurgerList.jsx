@@ -1,12 +1,24 @@
-
-import { useContext} from "react";
+// import BurgerService from "../services/BurgerService";
+import { useContext } from "react";
 import BurgerItem from "./BurgerItem";
 import { BurgerContext } from "../contexts/BurgerContext";
 
 const BurgerList = () => {
+  const { burgers } = useContext(BurgerContext);
 
- const {burgers} = useContext(BurgerContext);
+  /*
+  const [burgers, setBurgers] = useState([{ name: "The Burger" }]);
 
+  useEffect(() => {
+    getBurgersFromService();
+  }, []);
+
+  const getBurgersFromService = async () => {
+    setBurgers([]);
+    const burgersFromService = await BurgerService.getAll();
+    setBurgers(burgersFromService);
+  };
+  */
 
   const getBurgersJSX = () => {
     const burgerJSX = burgers.map((burger, i) => (

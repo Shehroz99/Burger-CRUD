@@ -34,12 +34,11 @@ const AddBurger = () => {
       image: image.name,
     };
     BurgerService.postBurger(newBurger, image);
-    console.log(image);
   };
 
   return (
     <section>
-      <h3>Legg til ny serie</h3>
+      <h3>Legg til ny burger</h3>
       <div>
         <label>Name</label>
         <input
@@ -79,7 +78,7 @@ const AddBurger = () => {
       <input
         onClick={saveBurger}
         type="button"
-        value="Lagre serie"
+        value="Lagre Burger"
         className="border rounded-md"
       />
     </section>

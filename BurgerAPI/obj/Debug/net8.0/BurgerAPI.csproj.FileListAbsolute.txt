@@ -127,3 +127,4 @@
 /Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/obj/Debug/net8.0/BurgerAPI.genruntimeconfig.cache
 /Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/obj/Debug/net8.0/ref/BurgerAPI.dll
 /Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/bin/Debug/net8.0/BurgerAPI.staticwebassets.runtime.json
+/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/obj/Debug/net8.0/BurgerAPI.sourcelink.json

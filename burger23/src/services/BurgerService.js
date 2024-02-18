@@ -3,7 +3,7 @@ import axios from "axios";
 const BurgerService = (() => {
   const localHost = "http://localhost:5181";
   const burgerController = `${localHost}/api/Burgers`;
-  const imageUploadController = `${localHost}/ImageUpload`;
+  const imageUploadController = `${localHost}/api/ImageUpload`;
 
   const getAll = async () => {
     try {
@@ -46,36 +46,31 @@ const BurgerService = (() => {
     }
   };
 
-  const postBurger = async (newBurger, image) => {
-    try {
-      if (image.type !== "image/jpeg" && image.type !== "image/png" && image.type !== "image/jpg" && image.type !== "image/webp") {
-        return alert("The uploaded picture has to be either a .jpg or .png file.")
+const postBurger = async (newBurger, image) => {
+      try{
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const result = await axios.post(burgerController, newBurger);
+
+        const formData = new FormData();
+        formData.append("formFile", image); // formFile er samme navn som i UploadController-metoden
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const uploadResult = await axios({
+            url: imageUploadController,
+            method: "POST",
+            data: formData,
+            headers: {"Content-Type": "multipart/form-data"}
+        });
+
+        // HUSK DENNE!! Hvis ikke hopes det opp med bildeobjekter i formData og det slutter å fungere riktig
+        formData.delete("formFile");
+        alert("Burger was successfully added!")
+      } catch (err) {
+        console.log(err);
+        return false;
       }
-      else
-      {
-
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const result = await axios.post(burgerController, newBurger);
-
-      const formData = new FormData();
-      formData.append("formFile", image);
-
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const uploadResult = await axios({
-        url: imageUploadController,
-        method: "POST",
-        data: formData,
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-
-      formData.delete("formFile");
     }
-
-    } catch (err) {
-      alert("Noe gikk galt med å lagre burgeren");
-      return false;
-    }
-  };
 
   const domainFromService = () => {
     return localHost;

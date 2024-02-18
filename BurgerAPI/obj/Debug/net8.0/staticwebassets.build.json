@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1K7yepIMT2DAHON2rm/0kHOJriLFQOPtpwQ1xf2Nm3s=",
+  "Hash": "eSa15Q595tzOOxTomIXMI+jHTMyOU7o+PbNwjbdzidA=",
   "Source": "BurgerAPI",
   "BasePath": "_content/BurgerAPI",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/burger5.png"
-    },
-    {
-      "Identity": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger6.jpeg",
-      "SourceId": "BurgerAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/",
-      "BasePath": "_content/BurgerAPI",
-      "RelativePath": "images/burger6.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/burger6.jpeg"
     },
     {
       "Identity": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/index.html",

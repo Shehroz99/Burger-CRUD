@@ -3,7 +3,7 @@ import {BurgerContext} from "../contexts/BurgerContext";
 
 const EditBurger = () => {
     const {editBurger, getById} = useContext(BurgerContext);
-    const [id, setId] = useState("1");
+    const [id, setId] = useState("");
     const [burgerToUpdate, setBurgerToUpdate] = useState({name: "", description: "", price: 0});
 
     const handleChange = (e) => {
