@@ -1,14 +1,16 @@
 import axios from "axios";
 
 const BurgerService = (() => {
-  const burgerController = "http://localhost:5181/api/Burgers";
-  const imageUploadController = "http://localhost:5181/api/ImageUpload";
+  const localHost = "http://localhost:5181";
+  const burgerController = `${localHost}/api/Burgers`;
+  const imageUploadController = `${localHost}/ImageUpload`;
 
   const getAll = async () => {
     try {
       const result = await axios.get(burgerController);
       return result.data;
     } catch (err) {
+      console.log(err);
       return false; // catch bør returnere en verdi og/eller melding som kan tas imot av komponenten/der hvor Service-funksjonene brukes fra, for å styre hva som skal videre; eksempelvis at man trenger å vise en tekst til bruker om at det gikk bra/dårlig å utføre handlingen.
     }
   };
@@ -18,6 +20,7 @@ const BurgerService = (() => {
       const result = await axios.get(`${burgerController}/${id}`);
       return result.data;
     } catch (err) {
+      console.log(err);
       return false;
     }
   };
@@ -27,23 +30,25 @@ const BurgerService = (() => {
       const result = await axios.delete(`${burgerController}/${id}`);
       return result.data;
     } catch (err) {
+      console.log(err);
       return false;
     }
   };
 
-  const putBurger = async (updatedBurger) => {
+  const putBurger = async (burgerToUpdate) => {
     try {
       // tar imot et helt oppdatert objekt av det som skal oppdateres
-      const result = await axios.put(burgerController, updatedBurger);
+      const result = await axios.put(burgerController, burgerToUpdate);
       return result.data;
     } catch (err) {
+      console.log(err);
       return false;
     }
   };
 
   const postBurger = async (newBurger, image) => {
     try {
-      if (image.type !== "image/jpeg" && image.type !== "image/png") {
+      if (image.type !== "image/jpeg" && image.type !== "image/png" && image.type !== "image/jpg" && image.type !== "image/webp") {
         return alert("The uploaded picture has to be either a .jpg or .png file.")
       }
       else
@@ -72,12 +77,17 @@ const BurgerService = (() => {
     }
   };
 
+  const domainFromService = () => {
+    return localHost;
+  }
+
   return {
     getAll,
     getById,
     deleteById,
     putBurger,
     postBurger,
+    domainFromService
   };
 })();
 

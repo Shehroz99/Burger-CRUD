@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/images/burger5.png"
     },
     {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger6.jpeg",
+      "PackagePath": "staticwebassets/images/burger6.jpeg"
+    },
+    {
       "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
