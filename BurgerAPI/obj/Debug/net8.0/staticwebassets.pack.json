@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger1.png",
+      "PackagePath": "staticwebassets/images/burger1.png"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger2.png",
+      "PackagePath": "staticwebassets/images/burger2.png"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger3.png",
+      "PackagePath": "staticwebassets/images/burger3.png"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger4.png",
+      "PackagePath": "staticwebassets/images/burger4.png"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/images/burger5.png",
+      "PackagePath": "staticwebassets/images/burger5.png"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/wwwroot/scripts/index.js",
+      "PackagePath": "staticwebassets/scripts/index.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BurgerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BurgerAPI.props",
+      "PackagePath": "build\\BurgerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BurgerAPI.props",
+      "PackagePath": "buildMultiTargeting\\BurgerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BurgerAPI.props",
+      "PackagePath": "buildTransitive\\BurgerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
