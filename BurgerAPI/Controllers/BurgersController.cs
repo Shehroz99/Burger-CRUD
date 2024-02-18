@@ -86,7 +86,28 @@ public class BurgersController : ControllerBase
         {
             return StatusCode(500);
         }
-    
+    }
 
-}
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        try
+        {
+            Burger? burger = await context.Burgers.FindAsync(id);
+            if (burger != null)
+            {
+                context.Burgers.Remove(burger);
+                await context.SaveChangesAsync();
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch 
+        {
+            return StatusCode(500);
+        }
+    }
 }
