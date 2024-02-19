@@ -7,6 +7,7 @@ const BurgersAdminPage = () => {
         <>
             <AddBurger />
             <EditBurger />
+        
             <BurgerList />
         </>
     )

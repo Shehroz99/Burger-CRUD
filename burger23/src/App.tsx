@@ -1,4 +1,4 @@
-import "./App.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BurgerProvider } from "./contexts/BurgerContext";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
@@ -13,15 +13,15 @@ function App() {
 
         <MainNavigation/>
 
-        <main>
-        <BurgerProvider>
-          <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="burgers" element={<BurgersPage />}></Route>
-            <Route path="burger-admin" element={<BurgersAdminPage />}></Route>
-            <Route path="delete-burger" element={<DeleteBurgersPage />}></Route>
-          </Routes>
-       </BurgerProvider>
+          <main>
+          <BurgerProvider>
+            <Routes>
+              <Route path="/" element={<HomePage />}></Route>
+              <Route path="burgers" element={<BurgersPage />}></Route>
+              <Route path="burger-admin" element={<BurgersAdminPage />}></Route>
+              <Route path="delete-burger" element={<DeleteBurgersPage />}></Route>
+            </Routes>
+        </BurgerProvider>
        </main>
       </BrowserRouter>
     </div>
