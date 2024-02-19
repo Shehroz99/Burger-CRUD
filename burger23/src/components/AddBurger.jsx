@@ -37,7 +37,7 @@ const AddBurger = () => {
   };
 
   return (
-    <section>
+    <section className="flex flex-col bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
       <h3>Legg til ny burger</h3>
       <div>
         <label>Name</label>
@@ -45,7 +45,7 @@ const AddBurger = () => {
           name="name"
           onChange={handleChange}
           type="text"
-          className="border rounded-md"
+          className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
         />
       </div>
       <div>
@@ -54,7 +54,7 @@ const AddBurger = () => {
           name="description"
           onChange={handleChange}
           type="text"
-          className="border rounded-md"
+          className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
         />
       </div>
       <div>
@@ -63,7 +63,7 @@ const AddBurger = () => {
           name="price"
           onChange={handleChange}
           type="double"
-          className="border rounded-md"
+          className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
         />
       </div>
       <div>
@@ -72,14 +72,14 @@ const AddBurger = () => {
           name="image"
           onChange={handleChange}
           type="file"
-          className="border rounded-md"
+          className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
         />
       </div>
       <input
         onClick={saveBurger}
         type="button"
         value="Lagre Burger"
-        className="border rounded-md"
+        className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0 bg-blue-700 text-white"
       />
     </section>
   );

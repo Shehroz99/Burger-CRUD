@@ -35,12 +35,10 @@ const BurgerList = () => {
   };
 
   return (
-       <section className="container">
-      <h3 className="text-center">Burgers</h3>
-      <div className="row">
+       <section className="row g-2">
+        <h3 className="text-center m-3 p-3 font-sans text-3xl ">Burgers</h3>
         {getBurgersJSX()}
-      </div>
-    </section>
+       </section>
   );
 };
 
