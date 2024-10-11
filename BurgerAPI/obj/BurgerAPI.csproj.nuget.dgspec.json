@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/BurgerAPI.csproj": {}
+    "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/BurgerAPI.csproj": {}
   },
   "projects": {
-    "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/BurgerAPI.csproj": {
+    "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/BurgerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/BurgerAPI.csproj",
+        "projectUniqueName": "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/BurgerAPI.csproj",
         "projectName": "BurgerAPI",
-        "projectPath": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/BurgerAPI.csproj",
+        "projectPath": "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/BurgerAPI.csproj",
         "packagesPath": "/Users/shehrozali/.nuget/packages/",
-        "outputPath": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/obj/",
+        "outputPath": "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shehrozali/.nuget/NuGet/NuGet.Config"

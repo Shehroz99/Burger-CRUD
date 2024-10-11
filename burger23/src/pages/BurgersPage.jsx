@@ -1,13 +1,11 @@
 import BurgerList from "../components/BurgerList";
 
 const BurgersPage = () => {
-    return (
-        <>
-    
-            <BurgerList />
-         
-        </>
-    )
-}
+  return (
+    <>
+      <BurgerList />
+    </>
+  );
+};
 
 export default BurgersPage;

@@ -15,7 +15,7 @@ const BurgerService = (() => {
       console.log(err);
       return false;
     }
-  }
+  };
 
   const getAll = async () => {
     try {
@@ -37,8 +37,6 @@ const BurgerService = (() => {
     }
   };
 
-
-
   const putBurger = async (burgerToUpdate) => {
     try {
       const result = await axios.put(burgerController, burgerToUpdate);
@@ -49,37 +47,35 @@ const BurgerService = (() => {
     }
   };
 
-const postBurger = async (newBurger, image) => {
-      try{
+  const postBurger = async (newBurger, image) => {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const result = await axios.post(burgerController, newBurger);
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const result = await axios.post(burgerController, newBurger);
+      const formData = new FormData();
+      formData.append("formFile", image);
 
-        const formData = new FormData();
-        formData.append("formFile", image);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const uploadResult = await axios({
+        url: imageUploadController,
+        method: "POST",
+        data: formData,
+        headers: { "Content-Type": "multipart/form-data" },
+      });
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const uploadResult = await axios({
-            url: imageUploadController,
-            method: "POST",
-            data: formData,
-            headers: {"Content-Type": "multipart/form-data"}
-        });
+      formData.delete("formFile");
 
-        formData.delete("formFile");
-        
-          window.location.reload();
-          alert("Burger was successfully added!")
-        
-      } catch (err) {
-        console.log(err);
-        return false;
-      }
+      window.location.reload();
+      alert("Burger was successfully added!");
+    } catch (err) {
+      console.log(err);
+      return false;
     }
+  };
 
   const domainFromService = () => {
     return localHost;
-  }
+  };
 
   return {
     getAll,
@@ -87,7 +83,7 @@ const postBurger = async (newBurger, image) => {
     deleteBurger,
     putBurger,
     postBurger,
-    domainFromService
+    domainFromService,
   };
 })();
 

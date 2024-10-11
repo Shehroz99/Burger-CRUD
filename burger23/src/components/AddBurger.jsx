@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import BurgerService from "../services/BurgerService";
 
 const AddBurger = () => {
@@ -37,50 +37,51 @@ const AddBurger = () => {
   };
 
   return (
-    <section className="flex flex-col bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
-      <h3>Legg til ny burger</h3>
-        <div>
-          <label>Name</label>
-          <input
-            name="name"
-            onChange={handleChange}
-            type="text"
-            className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
-          />
-        </div>
-        <div>
-          <label>Description</label>
-          <input
-            name="description"
-            onChange={handleChange}
-            type="text"
-            className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
-          />
-        </div>
-        <div>
-          <label>price</label>
-          <input
-            name="price"
-            onChange={handleChange}
-            type="double"
-            className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
-          />
-        </div>
-        <div>
-          <label>Bilde</label>
-          <input
-            name="image"
-            onChange={handleChange}
-            type="file"
-            className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0"
-          />
-        </div>
+    <section className="flex flex-col bg-white font-semibold text-center rounded-3xl border shadow-lg p-8 max-w-md mx-auto mt-10 space-y-6">
+      <h3 className="text-lg font-bold text-gray-800">Legg til ny burger</h3>
+      <div className="space-y-1">
+        <label className="text-sm text-gray-700">Navn</label>
         <input
-          onClick={saveBurger}
-          type="button"
-          value="Lagre Burger"
-          className="peer h-full w-full rounded-md border  px-3 py-3 font-sans text-sm font-normal outline outline-0 bg-blue-700 text-white"
+          name="name"
+          onChange={handleChange}
+          type="text"
+          className="peer w-full rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-800 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
+      </div>
+      <div className="space-y-1">
+        <label className="text-sm text-gray-700">Beskrivelse</label>
+        <input
+          name="description"
+          onChange={handleChange}
+          type="text"
+          className="peer w-full rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-800 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+        />
+      </div>
+      <div className="space-y-1">
+        <label className="text-sm text-gray-700">Pris</label>
+        <input
+          name="price"
+          onChange={handleChange}
+          type="number"
+          step="0.01"
+          className="peer w-full rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-800 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+        />
+      </div>
+      <div className="space-y-1">
+        <label className="text-sm text-gray-700">Bilde</label>
+        <input
+          name="image"
+          onChange={handleChange}
+          type="file"
+          className="peer w-full rounded-lg border border-gray-300 px-4 py-2 text-sm text-gray-800 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+        />
+      </div>
+      <input
+        onClick={saveBurger}
+        type="button"
+        value="Lagre Burger"
+        className="cursor-pointer w-full rounded-lg bg-blue-700 text-white py-3 text-sm font-semibold hover:bg-blue-600 transition-colors"
+      />
     </section>
   );
 };

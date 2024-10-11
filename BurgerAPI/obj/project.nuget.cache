@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iRcKV7p74Kzzo0F0MyWQOF7haJxJYuxBedwjsH9NgkCKc5wiDeqrGWHiTlApiJuZdHM9nGW87sH7Va+leQXQnA==",
+  "dgSpecHash": "nVCSERHTdKTE5ClYTy4ByZ9Fmr5RGmLpDWv8l8u5XbB35SSbVkmFrf+1869PRo5ihJQkx45GHBOcx1HLlEcjqA==",
   "success": true,
-  "projectFilePath": "/Users/shehrozali/Desktop/Webutvikling-eksamen/BurgerAPI/BurgerAPI.csproj",
+  "projectFilePath": "/Users/shehrozali/Desktop/React-netapi-projects/burger-CRUD/BurgerAPI/BurgerAPI.csproj",
   "expectedPackageFiles": [
     "/Users/shehrozali/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/shehrozali/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
