@@ -1,5 +1,7 @@
 READ ME! 
 
+This is a fullstack CRUD web application built on React and .NET
+
 You need to have dotnet and node.js installed on your computer. 
 https://dotnet.microsoft.com/en-us/download 
 https://nodejs.org/en/download/package-manager
