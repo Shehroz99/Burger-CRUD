@@ -1,5 +1,9 @@
 READ ME! 
 
+You need to have dotnet and node.js installed on your computer. 
+https://dotnet.microsoft.com/en-us/download 
+https://nodejs.org/en/download/package-manager
+
 Download and unzip the file
 
 Using the Command Line set your path to the burgerAPI folder 
